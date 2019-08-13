@@ -18,7 +18,7 @@ myfont = pygame.font.SysFont('Arial',50)
 # IMPORTANT GAME CONSTANTS
 WIDTH = 800 # display widht
 HEIGHT = 600 # display height
-TICK = 100 # clock tick [ms]
+TICK = 100 # clock tick
 
 GameDisplay = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Space Rocket')
@@ -27,7 +27,7 @@ clock = pygame.time.Clock()
 # LOADING OUR IMAGE OF ROCKET AND RESIZING IT
 RESIZED = 300 # resized pixels of rocket img
 
-rocketIMG = pygame.image.load('img/rocket.png')
+rocketIMG = pygame.image.load('rocket.png')
 rocketIMG = pygame.transform.scale(rocketIMG,(RESIZED, RESIZED))
 
 # INITIALIZATION AND CALCULATION OF IMPORTANT VARIABLES
